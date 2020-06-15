@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 N = int(input("Wprowadź liczbę całkowitej populacji: "))
 I = int(input("Wprowadź początkową liczbę osób zarażonych: "))
-beta = int(input("Wprowadź liczbę kontaktów dziennie z osobą zarażoną: "))
+beta = float(input("Wprowadź liczbę kontaktów dziennie z osobą zarażoną: "))
 K = int(input("Wprowadź średni czas trwania infekcji wyrażony w dniach: "))
 Time = int(input("Podaj liczbę dni: ")) # liczba dni oznacza czas brany pod uwagę podzczas badań
 
