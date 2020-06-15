@@ -4,13 +4,12 @@ import matplotlib.pyplot as plt
 
 N = int(input("Wprowadź liczbę całkowitej populacji: "))
 I = int(input("Wprowadź początkową liczbę osób zarażonych: "))
-B = int(input("Wprowadź liczbę kontaktów dziennie: "))
+beta = int(input("Wprowadź liczbę kontaktów dziennie z osobą zarażoną: "))
 K = int(input("Wprowadź średni czas trwania infekcji wyrażony w dniach: "))
 Time = int(input("Podaj liczbę dni: ")) # liczba dni oznacza czas brany pod uwagę podzczas badań
 
 R = 0 # początkowa liczba osób, które wyzdrowiały
 S = N - I - R # liczba osób podatnych na zakażenie
-beta = 1/B # współczynnik kontaktów dziennie z zakażoną osobą
 k = 1/K # współczynnik wyzdrowień
 t = np.linspace(0,Time,Time) # siatka punktów czasowych, oś x
 
